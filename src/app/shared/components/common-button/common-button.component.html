@@ -1,0 +1,15 @@
+<button
+  class="common-button"
+  [class.shadow-button]="shadow"
+  [style.background]="bgColor"
+  [style.color]="fontColor"
+  [style.fontSize]="fontSize"
+  [style.width.px]="width"
+  [style.height.px]="height"
+  [style.border]="'2px solid ' + border"
+>
+  @if (icon) {
+  <fa-icon class="icon" [icon]="icon"></fa-icon>
+  }
+  {{ label }}
+</button>
